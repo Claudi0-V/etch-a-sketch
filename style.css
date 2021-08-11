@@ -1,10 +1,14 @@
+:root {
+
+}
+
 #grid-container {
 	max-width: 600px;
-	max-height: auto;
+	max-height: 600px;
 	display: grid;	
  	grid-template-rows: repeat(16, 1fr);
-  	grid-template-columns: repeat(16, 1fr);
-	grid-gap: 5px;
+  grid-template-columns: repeat(16, 1fr);
+	grid-gap: 1px;
 }
 
 .cell {
@@ -13,3 +17,6 @@
   display: block;
 }
 
+.hovered {
+	background-color: black;
+}
