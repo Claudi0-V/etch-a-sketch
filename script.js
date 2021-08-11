@@ -1,9 +1,17 @@
-const div16 = document.querySelector('#grid-container');
-const arr16 = [...Array(16 * 16).keys()];
+const gridContainer = document.querySelector('#grid-container');
 
-arr16.forEach(value => {
+
+function createGrid(row, column) {
+
+const gridArr = [...Array(row * column).keys()];
+
+gridArr.forEach(value => {
 	div = document.createElement(`div.div${value}`);
 	div.classList.add('cell');
-	div16.appendChild(div);
+	gridContainer.appendChild(div);
 })
 
+}
+
+
+gridArr(16, 16);
