@@ -26,15 +26,19 @@ function newGridRows() {
 	return newGrid;
 }
 
-function resetStyle() {
-	gridCells.forEach(cell => cell.classList.remove('hovered'));
-	let cells = document.querySelectorAll('.cell');;
-	cells.forEach(cell => gridContainer.removeChild(cell))
+function newGrid() {
 	let newGrid = newGridRows();
 	createGrid(newGrid);	
 	const newGridCells = gridDeffiner();
 	newGridCells.forEach(cell => cell.addEventListener('mouseover', hoveringStyle))
-	document.documentElement.style.setProperty('--row', `${newGrid}`);
+	document.documentElement.style.setProperty('--rows', `${newGrid}`);
+}
+
+function resetStyle() {
+	gridCells.forEach(cell => cell.classList.remove('hovered'));
+	let cells = document.querySelectorAll('.cell');;
+	cells.forEach(cell => gridContainer.removeChild(cell));
+	newGrid();
 }
 
 createGrid(16);
