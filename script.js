@@ -1,12 +1,12 @@
 const gridContainer = document.querySelector('#grid-container');
 const clearButton = document.querySelector('#clear-grid');
+const main = document.querySelector('main');
 const gridDeffiner = () => document.querySelectorAll('.cell');
-
 
 function createGrid(rows) {
 	const gridArr = [...Array(rows * rows).keys()];
 	gridArr.forEach(value => {
-		div = document.createElement(`div`);
+		let div = document.createElement('div');
 		div.classList.add('cell');
 		gridContainer.appendChild(div);
 	})

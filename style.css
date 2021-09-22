@@ -26,6 +26,7 @@
 	width: 600px;
 	height: 600px;
 	display: grid;
+	box-sizing: border-box;
  	grid-template-rows: repeat(var(--rows), 1fr);
 	grid-template-columns: repeat(var(--rows), 1fr);
 }
