@@ -1,48 +1,44 @@
-const gridContainer = document.querySelector('#grid-container');
 const clearButton = document.querySelector('#clear-grid');
 const main = document.querySelector('main');
-const gridDeffiner = () => document.querySelectorAll('.cell');
+const buttonsDiv = document.querySelector('#buttons-div');
 
-function createGrid(rows) {
-	const gridArr = [...Array(rows * rows).keys()];
-	gridArr.forEach(value => {
-		let div = document.createElement('div');
+const getGridCells = () => document.querySelectorAll('.cell');
+
+const createGrid = (rows) => {
+	const gridContainer = document.querySelector('#grid-container');
+	gridContainer.remove();
+	const newGrid = document.createElement('div');
+	newGrid.setAttribute('id', 'grid-container');
+	for (let i = 0; i < rows * rows; i++) {
+		const div = document.createElement('div');
 		div.classList.add('cell');
-		gridContainer.appendChild(div);
-	})
+		newGrid.appendChild(div);
+	}
+	buttonsDiv.parentNode.insertBefore(newGrid, buttonsDiv.nextSibling)
 }
 
-
-function hoveringStyle(e) {
+const hoveringStyle = (e) => {
 	e.target.classList.add('hovered');
 }
 
-
-function newGridRows() {
-	let newGrid = 0;
+const newGridRows = () => {
+	let newGrid;
 	do {
-		newGrid = parseInt(prompt('What is the size of the new grid (Max 100)?'));
-	} while (newGrid > 100);
+		newGrid = parseInt(prompt('What is the size of the new grid (Min 1, Max 100)?'));
+	} while (newGrid > 100 || newGrid < 1);
 	return newGrid;
 }
 
-function newGrid() {
-	let newGrid = newGridRows();
+const newGrid = () => {
+	const newGrid = newGridRows();
 	createGrid(newGrid);	
-	const newGridCells = gridDeffiner();
+	const newGridCells = getGridCells();
 	newGridCells.forEach(cell => cell.addEventListener('mouseover', hoveringStyle))
 	document.documentElement.style.setProperty('--rows', `${newGrid}`);
 }
 
-function resetStyle() {
-	gridCells.forEach(cell => cell.classList.remove('hovered'));
-	let cells = document.querySelectorAll('.cell');;
-	cells.forEach(cell => gridContainer.removeChild(cell));
-	newGrid();
-}
-
 createGrid(16);
-const gridCells = gridDeffiner();
+const gridCells = getGridCells();
 
 gridCells.forEach(cell => cell.addEventListener('mouseover', hoveringStyle));
-clearButton.addEventListener('click', resetStyle);
+clearButton.addEventListener('click', newGrid);
