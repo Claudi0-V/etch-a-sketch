@@ -23,10 +23,9 @@
 }
 
 #grid-container {
-	width: 600px;
-	height: 600px;
+	width: min(75vw, 75vh);
+	height:  min(75vw, 75vh);
 	display: grid;
-	box-sizing: border-box;
  	grid-template-rows: repeat(var(--rows), 1fr);
 	grid-template-columns: repeat(var(--rows), 1fr);
 }
