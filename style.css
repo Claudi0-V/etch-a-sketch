@@ -2,6 +2,8 @@
 	--rows: 16;
 	margin: 0px;
 	box-sizing: border-box;
+  --greenish: #2FDD92 ;
+
 }
 
 body {
@@ -13,6 +15,43 @@ body {
 header {
   text-align: center;
 }
+
+/*MODAL*/
+/*modal */
+
+.modal-container {
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.35);
+  display: none;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: white;
+  border-radius: 4px;
+}
+
+.modal > p {
+  font-size: 0.8rem;
+  margin: 9px;
+}
+
+input {
+  margin-bottom: 5px;
+}
+
+
 /*MAIN*/
 main {
   display: flex;
