@@ -1,7 +1,8 @@
-const clearButton = document.querySelector("#clear-grid");
 const main = document.querySelector("main");
 const buttonsDiv = document.querySelector("#buttons-div");
 const gridContainer = document.querySelector("#grid-container");
+const colorizeToggle = document.querySelector("#colorize");
+const clearButton = document.querySelector(".clear");
 
 const colorize = false;
 
