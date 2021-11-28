@@ -26,4 +26,25 @@ const changeCellBackground = (event) => {
 };
 
 createGrid(16);
-clearButton.addEventListener("click", createGrid);
+/*
+newGridButton.addEventListener("click", () =>
+  modalContainer.style.setProperty("display", "flex")
+);
+
+sizeSelectButton.addEventListener("click", () => {
+  createGrid(gridSizeValue.value);
+  modalContainer.style.setProperty("display", "none");
+});
+clearButton.addEventListener("click", () => {
+  const allCells = document.querySelectorAll(".cell");
+  allCells.forEach((cell) =>
+    cell.style.setProperty("background-color", "white")
+  );
+});
+
+modalContainer.addEventListener("click", (event) => {
+  if (event.target === modalContainer) {
+    event.target.style.setProperty("display", "none");
+  }
+});
+*/
