@@ -8,9 +8,11 @@ const clearButton = document.querySelector(".clear");
 const modalContainer = document.querySelector(".modal-container");
 const gridContainer = document.querySelector("#grid-container");
 const colorizeToggle = document.querySelector("#colorize");
-const colorize = false;
+
+let colorize = false;
 
 const randomColor = () => `hsla(${Math.random() * 360}, 100%, 50%, 1)`;
+
 const createGrid = (rows) => {
   if (rows < 2 || rows > 100) rows = 16;
   const grid = document.querySelector(".grid");
@@ -19,7 +21,7 @@ const createGrid = (rows) => {
   newGrid.setAttribute("class", "grid");
   for (let i = 0; i < rows * rows; i++) {
     const div = document.createElement("div");
-    div.addEventListener("mousemove", changeCellBackground);
+    div.addEventListener("pointerenter", changeCellBackground);
     div.classList.add("cell");
     newGrid.appendChild(div);
   }
