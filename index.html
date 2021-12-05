@@ -2,87 +2,89 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-  <link rel="manifest" href="favicon/manifest.json">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-  <meta name="theme-color" content="#ffffff">
-  <title>Etch a Sketch Project</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <script src="script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <title>Etch a Sketch Project</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
-  <header>
-    <h1>Etch a Sketch</h1>
-  </header>
-  <div class="modal-container">
-    <div class="modal">
-      <input type="number" id="grid-size-value">
-      <p>Min: 2, Max 100.</p>
-      <button type="button" id="size-selector">Select size</button>
+    <header>
+        <h1>Etch a Sketch</h1>
+    </header>
+    <div class="modal-container">
+        <div class="modal">
+            <input type="number" id="grid-size-value">
+            <p>Min: 2, Max 100.</p>
+            <button type="button" id="size-selector">Select size</button>
+        </div>
     </div>
-  </div>
-  <main id="main">
-    <section class="buttons-container">
-      <button type="button" class="new-grid">Change Size</button>
-      <div class="toggle-container">
-        <svg id="svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-          width="30" height="30.53164556962025" viewBox="0, 0, 400,402.53164556962025">
-          <g id="svgg">
-            <path id="path0"
-              d="M100.100 0.701 L 0.000 0.802 0.000 101.201 L 0.000 201.600 100.400 201.600 L 200.800 201.600 200.800 101.224 C 200.800 46.017,200.665 0.792,200.500 0.724 C 200.335 0.656,155.155 0.645,100.100 0.701 M201.300 201.865 C 200.902 202.026,200.800 222.474,200.800 302.233 L 200.800 402.400 300.400 402.400 L 400.000 402.400 400.000 302.000 L 400.000 201.600 300.900 201.632 C 246.395 201.649,201.575 201.754,201.300 201.865 "
-              stroke="none" fill="#040404" fill-rule="evenodd"></path>
-            <path id="path1"
-              d="M0.000 0.402 C 0.000 0.669,33.438 0.802,100.300 0.798 L 200.600 0.794 200.701 101.197 L 200.802 201.600 100.401 201.600 L 0.000 201.600 0.000 302.000 L 0.000 402.400 100.400 402.400 L 200.800 402.400 200.800 302.243 C 200.800 211.282,200.858 202.063,201.433 201.843 C 201.781 201.709,246.601 201.600,301.033 201.600 L 400.000 201.600 400.000 100.800 L 400.000 0.000 200.000 0.000 C 66.417 0.000,0.000 0.133,0.000 0.402 "
-              stroke="none" fill="#fbfcfc" fill-rule="evenodd"></path>
-          </g>
-        </svg>
+    <main id="main">
+        <section class="buttons-container">
+            <button type="button" class="new-grid">Change Size</button>
+            <div class="toggle-container">
+                <svg id="svg" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30.53164556962025"
+                    viewBox="0, 0, 400,402.53164556962025">
+                    <g id="svgg">
+                        <path id="path0"
+                            d="M100.100 0.701 L 0.000 0.802 0.000 101.201 L 0.000 201.600 100.400 201.600 L 200.800 201.600 200.800 101.224 C 200.800 46.017,200.665 0.792,200.500 0.724 C 200.335 0.656,155.155 0.645,100.100 0.701 M201.300 201.865 C 200.902 202.026,200.800 222.474,200.800 302.233 L 200.800 402.400 300.400 402.400 L 400.000 402.400 400.000 302.000 L 400.000 201.600 300.900 201.632 C 246.395 201.649,201.575 201.754,201.300 201.865 "
+                            stroke="none" fill="#040404" fill-rule="evenodd"></path>
+                        <path id="path1"
+                            d="M0.000 0.402 C 0.000 0.669,33.438 0.802,100.300 0.798 L 200.600 0.794 200.701 101.197 L 200.802 201.600 100.401 201.600 L 0.000 201.600 0.000 302.000 L 0.000 402.400 100.400 402.400 L 200.800 402.400 200.800 302.243 C 200.800 211.282,200.858 202.063,201.433 201.843 C 201.781 201.709,246.601 201.600,301.033 201.600 L 400.000 201.600 400.000 100.800 L 400.000 0.000 200.000 0.000 C 66.417 0.000,0.000 0.133,0.000 0.402 "
+                            stroke="none" fill="#fbfcfc" fill-rule="evenodd"></path>
+                    </g>
+                </svg>
 
-        <input type="checkbox" id="colorize">
-        <label for="colorize" class="toggle"></label>
+                <input type="checkbox" id="colorize">
+                <label for="colorize" class="toggle"></label>
 
-        <svg id="svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-          width="30" height="29.4842767295597" viewBox="0, 0, 400,397.4842767295597">
-          <g id="svgg">
-            <path id="path0"
-              d="M22.068 0.419 C 55.207 0.810,198.087 0.793,199.006 0.398 C 199.452 0.206,155.864 0.078,99.801 0.106 C 42.017 0.135,9.201 0.267,22.068 0.419 M399.013 0.696 C 399.172 1.079,399.442 1.928,399.611 2.584 C 399.886 3.651,399.923 3.577,399.959 1.889 C 399.991 0.402,399.864 0.000,399.361 0.000 C 398.907 0.000,398.806 0.201,399.013 0.696 M399.470 150.762 C 399.101 351.969,399.125 397.614,399.602 397.614 C 399.867 397.614,400.000 332.140,400.000 201.988 C 400.000 94.394,399.940 6.362,399.867 6.362 C 399.794 6.362,399.615 71.342,399.470 150.762 M-0.000 299.005 L 0.000 397.614 99.802 397.614 L 199.604 397.614 199.504 299.105 L 199.404 200.596 99.702 200.496 L -0.000 200.396 -0.000 299.005 "
-              stroke="none" fill="#eca4bc" fill-rule="evenodd"></path>
-            <path id="path1"
-              d="M199.605 98.914 C 199.599 187.958,199.660 197.917,200.219 198.715 L 200.840 199.602 299.338 199.602 C 387.620 199.602,397.926 199.539,398.714 198.987 L 399.593 198.371 399.600 103.002 C 399.604 50.550,399.718 6.824,399.853 5.834 C 400.050 4.398,399.928 3.755,399.250 2.658 C 398.783 1.901,398.511 0.994,398.646 0.641 C 398.872 0.052,390.754 0.000,299.252 0.000 L 199.612 0.000 199.605 98.914 "
-              stroke="none" fill="#1cbbfb" fill-rule="evenodd"></path>
-            <path id="path2"
-              d="M0.000 100.466 L 0.000 200.398 99.579 200.398 C 166.119 200.398,199.240 200.531,199.406 200.799 C 199.571 201.067,232.624 201.196,299.058 201.189 C 353.730 201.183,398.610 201.270,398.792 201.382 C 398.973 201.494,399.188 200.890,399.269 200.040 C 399.410 198.567,399.380 198.521,398.626 199.049 C 397.955 199.518,382.883 199.602,299.338 199.602 L 200.840 199.602 200.219 198.715 C 199.660 197.917,199.598 188.024,199.602 99.610 C 199.605 45.590,199.606 1.213,199.604 0.994 C 199.603 0.730,166.047 0.586,99.801 0.565 L 0.000 0.534 0.000 100.466 M398.410 1.117 C 398.410 1.294,398.672 1.786,398.993 2.210 C 399.589 2.998,399.796 2.557,399.361 1.424 C 399.112 0.775,398.410 0.548,398.410 1.117 "
-              stroke="none" fill="#7364c4" fill-rule="evenodd"></path>
-            <path id="path3"
-              d="M199.655 299.901 L 199.602 397.614 298.808 397.614 L 398.014 397.614 397.913 300.099 L 397.813 202.584 299.105 202.484 L 200.398 202.384 200.345 203.677 L 200.293 204.970 200.000 203.579 C 199.839 202.813,199.684 246.158,199.655 299.901 "
-              stroke="none" fill="#d3346b" fill-rule="evenodd"></path>
-            <path id="path4"
-              d="M295.920 201.094 L 199.593 201.194 199.852 202.884 C 200.174 204.985,200.398 205.297,200.398 203.644 L 200.398 202.384 299.105 202.484 L 397.813 202.584 397.913 300.099 C 398.002 386.412,398.082 397.614,398.609 397.614 C 399.428 397.614,399.527 201.674,398.708 201.398 C 397.601 201.025,388.454 200.998,295.920 201.094 "
-              stroke="none" fill="#b14072" fill-rule="evenodd"></path>
-          </g>
-        </svg>
-      </div>
-      <button type="button" class="clear">Clear</button>
-    </section>
-    <div id="grid-container">
-      <div class="grid"></div>
-    </div>
-  </main>
+                <svg id="svg" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="29.4842767295597"
+                    viewBox="0, 0, 400,397.4842767295597">
+                    <g id="svgg">
+                        <path id="path0"
+                            d="M22.068 0.419 C 55.207 0.810,198.087 0.793,199.006 0.398 C 199.452 0.206,155.864 0.078,99.801 0.106 C 42.017 0.135,9.201 0.267,22.068 0.419 M399.013 0.696 C 399.172 1.079,399.442 1.928,399.611 2.584 C 399.886 3.651,399.923 3.577,399.959 1.889 C 399.991 0.402,399.864 0.000,399.361 0.000 C 398.907 0.000,398.806 0.201,399.013 0.696 M399.470 150.762 C 399.101 351.969,399.125 397.614,399.602 397.614 C 399.867 397.614,400.000 332.140,400.000 201.988 C 400.000 94.394,399.940 6.362,399.867 6.362 C 399.794 6.362,399.615 71.342,399.470 150.762 M-0.000 299.005 L 0.000 397.614 99.802 397.614 L 199.604 397.614 199.504 299.105 L 199.404 200.596 99.702 200.496 L -0.000 200.396 -0.000 299.005 "
+                            stroke="none" fill="#eca4bc" fill-rule="evenodd"></path>
+                        <path id="path1"
+                            d="M199.605 98.914 C 199.599 187.958,199.660 197.917,200.219 198.715 L 200.840 199.602 299.338 199.602 C 387.620 199.602,397.926 199.539,398.714 198.987 L 399.593 198.371 399.600 103.002 C 399.604 50.550,399.718 6.824,399.853 5.834 C 400.050 4.398,399.928 3.755,399.250 2.658 C 398.783 1.901,398.511 0.994,398.646 0.641 C 398.872 0.052,390.754 0.000,299.252 0.000 L 199.612 0.000 199.605 98.914 "
+                            stroke="none" fill="#1cbbfb" fill-rule="evenodd"></path>
+                        <path id="path2"
+                            d="M0.000 100.466 L 0.000 200.398 99.579 200.398 C 166.119 200.398,199.240 200.531,199.406 200.799 C 199.571 201.067,232.624 201.196,299.058 201.189 C 353.730 201.183,398.610 201.270,398.792 201.382 C 398.973 201.494,399.188 200.890,399.269 200.040 C 399.410 198.567,399.380 198.521,398.626 199.049 C 397.955 199.518,382.883 199.602,299.338 199.602 L 200.840 199.602 200.219 198.715 C 199.660 197.917,199.598 188.024,199.602 99.610 C 199.605 45.590,199.606 1.213,199.604 0.994 C 199.603 0.730,166.047 0.586,99.801 0.565 L 0.000 0.534 0.000 100.466 M398.410 1.117 C 398.410 1.294,398.672 1.786,398.993 2.210 C 399.589 2.998,399.796 2.557,399.361 1.424 C 399.112 0.775,398.410 0.548,398.410 1.117 "
+                            stroke="none" fill="#7364c4" fill-rule="evenodd"></path>
+                        <path id="path3"
+                            d="M199.655 299.901 L 199.602 397.614 298.808 397.614 L 398.014 397.614 397.913 300.099 L 397.813 202.584 299.105 202.484 L 200.398 202.384 200.345 203.677 L 200.293 204.970 200.000 203.579 C 199.839 202.813,199.684 246.158,199.655 299.901 "
+                            stroke="none" fill="#d3346b" fill-rule="evenodd"></path>
+                        <path id="path4"
+                            d="M295.920 201.094 L 199.593 201.194 199.852 202.884 C 200.174 204.985,200.398 205.297,200.398 203.644 L 200.398 202.384 299.105 202.484 L 397.813 202.584 397.913 300.099 C 398.002 386.412,398.082 397.614,398.609 397.614 C 399.428 397.614,399.527 201.674,398.708 201.398 C 397.601 201.025,388.454 200.998,295.920 201.094 "
+                            stroke="none" fill="#b14072" fill-rule="evenodd"></path>
+                    </g>
+                </svg>
+            </div>
+            <button type="button" class="clear">Clear</button>
+        </section>
+        <div id="grid-container">
+            <div class="grid"></div>
+        </div>
+    </main>
 </body>
 
 </html>
